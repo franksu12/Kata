@@ -27,4 +27,14 @@ public class KataTest {
 	public void toRoman_Enter4ReturnsIV() {
 		assertEquals("IV", romanNumeral.toRoman(4));
 	}
+	
+	@Test
+	public void toRoman_Enter5ReturnsV() {
+		assertEquals("V", romanNumeral.toRoman(5));
+	}
+	
+	@Test
+	public void toRoman_Enter7ReturnsVII() {
+		assertEquals("VII", romanNumeral.toRoman(7));
+	}
 }
