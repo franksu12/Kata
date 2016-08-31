@@ -7,8 +7,9 @@ import org.junit.Test;
 public class KataTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void toRoman_Enter1ReturnsI() {
+		Kata romanNumeral = new Kata();
+		assertEquals("I", romanNumeral.toRoman(1));
 	}
 
 }
