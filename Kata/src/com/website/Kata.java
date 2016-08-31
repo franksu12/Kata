@@ -3,8 +3,16 @@ package com.website;
 public class Kata {
 	
 	public String toRoman(int number) {
-				
-		if (number >= 50)
+		
+		/* Stopping at this point in Arabic to Roman conversion
+		 * for this Kata's purposes.
+		 */
+		
+		if (number >= 100)
+			return "C" + toRoman(number - 100);
+		else if (number >= 90)
+			return "XC" + toRoman(number - 90);
+		else if (number >= 50)
 			return "L" + toRoman(number - 50);
 		else if (number >= 40)
 			return "XL" + toRoman(number - 40);

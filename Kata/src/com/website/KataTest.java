@@ -63,4 +63,14 @@ public class KataTest {
 		assertEquals("LXVI", romanNumeral.toRoman(66));
 	}
 	
+	@Test
+	public void toRoman_Enter99ReturnsXCIX() {
+		assertEquals("XCIX", romanNumeral.toRoman(99));
+	}
+	
+	@Test
+	public void toRoman_Enter140ReturnsC() {
+		assertEquals("CXL", romanNumeral.toRoman(140));
+	}
+	
 }
