@@ -13,6 +13,8 @@ public class KataTest {
 		romanNumeral = new Kata();
 	}
 	
+	//Begin tests for Arabic number conversion to Roman numeral
+	
 	@Test
 	public void toRoman_Enter1ReturnsI() {
 		assertEquals("I", romanNumeral.toRoman(1));
@@ -72,5 +74,16 @@ public class KataTest {
 	public void toRoman_Enter140ReturnsC() {
 		assertEquals("CXL", romanNumeral.toRoman(140));
 	}
+	
+	//End tests for Arabic number conversion to Roman numeral
+	
+	//Begin tests for Roman numeral conversion to Arabic number
+	
+	@Test
+	public void toArabic_EnterIReturns1() {
+		assertEquals(1, romanNumeral.toArabic("I"));
+	}
+	
+	//End tests for Roman numeral conversion to Arabic number
 	
 }

@@ -29,4 +29,11 @@ public class Kata {
 		
 		return "";
 	}
+	
+	public int toArabic(String numeral) {
+		
+		return 1;
+		
+	}
+	
 }
