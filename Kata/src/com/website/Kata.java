@@ -46,7 +46,10 @@ public class Kata {
 					number += 5;
 					break;
 				case 'X':
-					number += 10;
+					if (i+1 < numeral.length() && (numeral.charAt(i+1) == 'L' || numeral.charAt(i+1) == 'C'))
+						number -= 10;
+					else
+						number += 10;
 					break;
 				case 'L':
 					number += 50;
@@ -54,6 +57,11 @@ public class Kata {
 				case 'C':
 					number += 100;
 					break;
+					
+				/* Stopping at this point in Roman to Arabic conversion
+				 * for this Kata's purposes.
+				 */
+					
 				default:
 					break;
 			}
