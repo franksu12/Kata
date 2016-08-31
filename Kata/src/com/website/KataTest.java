@@ -22,4 +22,9 @@ public class KataTest {
 	public void toRoman_Enter3ReturnsIII() {
 		assertEquals("III", romanNumeral.toRoman(3));
 	}
+	
+	@Test
+	public void toRoman_Enter4ReturnsIV() {
+		assertEquals("IV", romanNumeral.toRoman(4));
+	}
 }
