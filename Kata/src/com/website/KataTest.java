@@ -109,6 +109,26 @@ public class KataTest {
 		assertEquals(26, romanNumeral.toArabic("XXVI"));
 	}
 	
+	@Test
+	public void toArabic_EnterLReturns50() {
+		assertEquals(50, romanNumeral.toArabic("L"));
+	}
+	
+	@Test
+	public void toArabic_EnterLXIVReturns64() {
+		assertEquals(64, romanNumeral.toArabic("LXIV"));
+	}
+
+	@Test
+	public void toArabic_EnterCReturns100() {
+		assertEquals(100, romanNumeral.toArabic("C"));
+	}
+	
+	@Test
+	public void toArabic_EnterCCCLXVIReturns366() {
+		assertEquals(366, romanNumeral.toArabic("CCCLXVI"));
+	}
+	
 	//End tests for Roman numeral conversion to Arabic number
 	
 }

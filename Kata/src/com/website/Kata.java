@@ -48,6 +48,12 @@ public class Kata {
 				case 'X':
 					number += 10;
 					break;
+				case 'L':
+					number += 50;
+					break;
+				case 'C':
+					number += 100;
+					break;
 				default:
 					break;
 			}
