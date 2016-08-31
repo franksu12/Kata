@@ -89,6 +89,16 @@ public class KataTest {
 		assertEquals(3, romanNumeral.toArabic("III"));
 	}
 	
+	@Test
+	public void toArabic_EnterIVReturns4() {
+		assertEquals(4, romanNumeral.toArabic("IV"));
+	}
+	
+	@Test
+	public void toArabic_EnterVIIReturns7() {
+		assertEquals(7, romanNumeral.toArabic("VII"));
+	}
+	
 	//End tests for Roman numeral conversion to Arabic number
 	
 }

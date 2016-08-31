@@ -35,7 +35,19 @@ public class Kata {
 		int number = 0;
 		
 		for (int i = 0; i < numeral.length(); i++) {
-			number ++;
+			switch (numeral.charAt(i)) {
+				case 'I':
+					if (i+1 < numeral.length() && numeral.charAt(i+1) == 'V')
+						number -= 1;
+					else
+						number += 1;
+					break;
+				case 'V':
+					number += 5;
+					break;
+				default:
+					break;
+			}
 		}
 		
 		return number;
