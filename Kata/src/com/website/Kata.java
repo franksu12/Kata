@@ -4,6 +4,9 @@ public class Kata {
 	
 	public String toRoman(int number) {
 		
-		return "I";
+		if (number >= 1)
+			return "I" + toRoman(number - 1);
+		
+		return "";
 	}
 }
