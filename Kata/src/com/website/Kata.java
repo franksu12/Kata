@@ -32,7 +32,13 @@ public class Kata {
 	
 	public int toArabic(String numeral) {
 		
-		return 1;
+		int number = 0;
+		
+		for (int i = 0; i < numeral.length(); i++) {
+			number ++;
+		}
+		
+		return number;
 		
 	}
 	
