@@ -37,13 +37,16 @@ public class Kata {
 		for (int i = 0; i < numeral.length(); i++) {
 			switch (numeral.charAt(i)) {
 				case 'I':
-					if (i+1 < numeral.length() && numeral.charAt(i+1) == 'V')
+					if (i+1 < numeral.length() && (numeral.charAt(i+1) == 'V' || numeral.charAt(i+1) == 'X'))
 						number -= 1;
 					else
 						number += 1;
 					break;
 				case 'V':
 					number += 5;
+					break;
+				case 'X':
+					number += 10;
 					break;
 				default:
 					break;
